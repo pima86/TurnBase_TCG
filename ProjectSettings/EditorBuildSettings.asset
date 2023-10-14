@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: 35a7d31f9ab54e748bbe97fc26e3b53d
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 89b3008dd2060cf40bcc8cb841b607fc
+  - enabled: 1
+    path: Assets/Scenes/Story.unity
+    guid: 7df76a5561dd9304ebbb116269f2200e
+  - enabled: 1
+    path: Assets/Scenes/DeckList.unity
+    guid: 6e596fa7a82abc94ca0d48dfe96cecce
+  - enabled: 1
+    path: Assets/Scenes/Deck.unity
+    guid: 7ba2be3b23c73bd44bf06ddc763559b1
+  - enabled: 1
+    path: Assets/Scenes/Memory.unity
+    guid: 3d7d5da0ad1400f4e9cd54865ca751e2
+  - enabled: 1
+    path: Assets/Scenes/N1_Battle.unity
+    guid: 322101a159471df4780f6b29bb1971ee
+  m_configObjects: {}

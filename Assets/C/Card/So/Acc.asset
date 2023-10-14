@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d832276451c804d891699796c03f7c, type: 3}
+  m_Name: Acc
+  m_EditorClassIdentifier: 
+  acc:
+  - icon: {fileID: 3983869344976975800, guid: 10c7599091ddc2849808e579ef940f1e, type: 3}
+    rank: "\uACE0\uAE09"
+    name: "\uC9C0\uADF8\uC7AC\uADF8 \uAF2C\uB9AC"
+    amount: 0
+    description: "\uC624\uB79C \uC2DC\uAC04 \uAD00\uB9AC\uD558\uC9C0 \uC54A\uC740
+      \uB4EF \uC5EC\uAE30\uC800\uAE30\uAC00 \uAEBE\uC778 \uC0C1\uD0DC\uB85C \uAD73\uC5B4\uBC84\uB838\uB2E4."
+    effect:
+    - "\uCC38\uACA9+1"
+    - "\uD0C0\uACA9-1"
+  - icon: {fileID: 7721978399612619611, guid: 10c7599091ddc2849808e579ef940f1e, type: 3}
+    rank: "\uACE0\uAE09"
+    name: "\uC545\uCDE8\uB098\uB294 \uB179\uC0C9 \uC810\uC561"
+    amount: 1
+    description: "\uBAB8\uC5D0\uC11C \uB5A8\uC5B4\uC838\uB098\uC624\uC790 \uC911\uB825\uC758
+      \uC601\uD5A5\uC744 \uBC1B\uC9C0 \uC54A\uB294 \uB4EF \uC5EC\uAE30\uC800\uAE30\uB85C
+      \uD769\uC5B4\uC9C8\uB824\uACE0 \uD55C\uB2E4. \uAF64\uB098 \uC2EC\uD55C \uC545\uCDE8\uAC00
+      \uB09C\uB2E4."
+    effect:
+    - "\uCCB4\uB825+8"
+    - "\uB0B4\uAD6C-1"
+  - icon: {fileID: 7117098008598869619, guid: 10c7599091ddc2849808e579ef940f1e, type: 3}
+    rank: "\uC77C\uBC18"
+    name: "\uAC80\uC740 \uB098\uBB34\uD310"
+    amount: 0
+    description: "\uC0C9\uC744 \uC783\uC740 \uB4EF\uD55C \uB098\uBB34\uB85C \uB9CC\uB4E0
+      \uD310, \uADF8 \uC678\uC5D0\uB294 \uC77C\uBC18\uC801\uC778 \uB098\uBB34\uD310\uACFC
+      \uAC19\uC740 \uB4EF\uD558\uB2E4."
+    effect:
+    - "\uB0B4\uAD6C+5"
+    - "\uC774\uB3D9 \uD3EC\uC778\uD2B8-1"
+  - icon: {fileID: 8955066141232615500, guid: 10c7599091ddc2849808e579ef940f1e, type: 3}
+    rank: "\uC77C\uBC18"
+    name: "\uB8EC\uC774 \uC0C8\uACA8\uC9C4 \uB3CC"
+    amount: 1
+    description: "\uC758\uBBF8\uB97C \uC54C \uC218 \uC5C6\uB294 \uBB38\uC790\uAC00
+      \uC0C8\uACA8\uC838\uC788\uB294 \uB3CC, \uADF8 \uC678\uC5D0\uB294 \uC77C\uBC18\uC801\uC778
+      \uB3CC\uACFC \uAC19\uC740 \uB4EF\uD558\uB2E4."
+    effect:
+    - "\uB9C8\uB098 \uCD5C\uB300\uCE58+1"
+    - "\uB9C8\uB098 \uC7AC\uC0DD+1"
+  - icon: {fileID: -2061286306576841660, guid: 10c7599091ddc2849808e579ef940f1e, type: 3}
+    rank: "\uACE0\uAE09"
+    name: "\uB179\uC0C9 \uBE14\uB7ED"
+    amount: 0
+    description: 
+    effect:
+    - "\uCCB4\uB825+15"
+    - "\uB0B4\uAD6C-5"
+  - icon: {fileID: -2315349204042966277, guid: 10c7599091ddc2849808e579ef940f1e, type: 3}
+    rank: "\uD76C\uADC0"
+    name: "\uBF08 \uCC44\uCC0D"
+    amount: 0
+    description: 
+    effect:
+    - "\uCC38\uACA9+2"
+    - "\uD0C0\uACA9-2"
+  - icon: {fileID: -1978923210764750207, guid: 10c7599091ddc2849808e579ef940f1e, type: 3}
+    rank: "\uD76C\uADC0"
+    name: "\uB3CC\uC5F0\uBCC0\uC774 \uC2AC\uB77C\uC784"
+    amount: 0
+    description: 
+    effect:
+    - "\uB9C8\uB098 \uCD5C\uB300\uCE58+1"
+    - "\uCCB4\uB825+5"
+  - icon: {fileID: -4862759321378096351, guid: 10c7599091ddc2849808e579ef940f1e, type: 3}
+    rank: "\uACE0\uAE09"
+    name: "\uCE7C\uB4F1"
+    amount: 0
+    description: 
+    effect:
+    - "\uB9C8\uB098 \uC7AC\uC0DD+1"
+  - icon: {fileID: 7564224378916546201, guid: 10c7599091ddc2849808e579ef940f1e, type: 3}
+    rank: "\uACE0\uAE09"
+    name: "\uCE7C\uB0A0"
+    amount: 0
+    description: 
+    effect:
+    - "\uB9C8\uB098 \uC7AC\uC0DD+1"
+  - icon: {fileID: -4419032756825319352, guid: 10c7599091ddc2849808e579ef940f1e, type: 3}
+    rank: "\uACE0\uAE09"
+    name: "\uCE7C \uC190\uC7A1\uC774"
+    amount: 0
+    description: 
+    effect:
+    - "\uB9C8\uB098 \uC7AC\uC0DD+1"
+  - icon: {fileID: -2478129066101553373, guid: 10c7599091ddc2849808e579ef940f1e, type: 3}
+    rank: "\uC601\uC6C5"
+    name: "\uC5B4\uB290 \uBB34\uC0AC\uC758 \uAC80"
+    amount: 0
+    description: 
+    effect:
+    - "\uCC38\uACA9+5"
+    - "\uD0C0\uACA9-5"
+    - "\uC774\uB3D9 \uD3EC\uC778\uD2B8+1"
+  - icon: {fileID: 5712216369149881767, guid: 10c7599091ddc2849808e579ef940f1e, type: 3}
+    rank: "\uD76C\uADC0"
+    name: "\uC2AC\uB77C\uC784 \uD63C\uD569\uBB3C"
+    amount: 0
+    description: 
+    effect:
+    - "\uB9C8\uB098 \uCD5C\uB300\uCE58+1"
+    - "\uCCB4\uB825+5"
+  - icon: {fileID: -6539641567455863775, guid: 10c7599091ddc2849808e579ef940f1e, type: 3}
+    rank: "\uC601\uC6C5"
+    name: "\uACBD\uC9C8\uD654\uB41C \uC2AC\uB77C\uC784"
+    amount: 0
+    description: 
+    effect:
+    - "\uB9C8\uB098 \uC7AC\uC0DD+1"
+    - "\uCCB4\uB825+5"
+  - icon: {fileID: 6703689422020431201, guid: 10c7599091ddc2849808e579ef940f1e, type: 3}
+    rank: "\uC804\uC124"
+    name: "\uAC15\uD654\uB41C \uAC80"
+    amount: 0
+    description: 
+    effect:
+    - "\uCC38\uACA9+7"
+    - "\uD0C0\uACA9-7"
+    - "\uC774\uB3D9 \uD3EC\uC778\uD2B8+3"
+  - icon: {fileID: 5779955263200141753, guid: 10c7599091ddc2849808e579ef940f1e, type: 3}
+    rank: "\uC601\uC6C5"
+    name: "\uAC15\uD654\uB41C \uCC44\uCC0D"
+    amount: 0
+    description: 
+    effect:
+    - "\uCC38\uACA9+5"
+    - "\uD0C0\uACA9-5"
+  - icon: {fileID: -3533989260078289083, guid: 10c7599091ddc2849808e579ef940f1e, type: 3}
+    rank: "\uD76C\uADC0"
+    name: "\uC2AC\uB77C\uC784 \uB369\uC5B4\uB9AC"
+    amount: 0
+    description: 
+    effect:
+    - "\uCCB4\uB825+5"
+  - icon: {fileID: -6571774648020645364, guid: 10c7599091ddc2849808e579ef940f1e, type: 3}
+    rank: "\uACE0\uAE09"
+    name: "\uB8EC\uC774 \uC0C8\uACA8\uC9C4 \uB3C4\uB07C"
+    amount: 0
+    description: 
+    effect:
+    - "\uD0C0\uACA9+5"
+    - "\uCC38\uACA9-5"
+  - icon: {fileID: -7137974578522530587, guid: 10c7599091ddc2849808e579ef940f1e, type: 3}
+    rank: "\uC601\uC6C5"
+    name: "\uAC15\uD654\uB41C \uB3C4\uB07C"
+    amount: 0
+    description: 
+    effect:
+    - "\uD0C0\uACA9+10"
+    - "\uCC38\uACA9-10"
+    - "\uB9C8\uB098 \uC7AC\uC0DD+1"

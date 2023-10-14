@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13dc7ab9e6ee99d42b05a642033a505f, type: 3}
+  m_Name: storiesSO
+  m_EditorClassIdentifier: 
+  stories:
+  - name: "\uD750\uB9BF\uD55C \uAE30\uC5B5"
+    content: "\uCC98\uC74C\uBCF4\uB294 \uC7A5\uC18C\uC5D0\uC11C \uB208\uC744 \uB72C
+      \uB2F9\uC2E0\uC740 \uC55E\uC5D0 \"\uAC10\uB9C8\"\uB77C\uB294 \uAD00\uB9AC\uC778\uC744
+      \uD1B5\uD574 \uC774 \uACF3\uC5D0 \uB300\uD574 \uB4E3\uAC8C \uB418\uB294\uB370"
+    kind: "\uC2A4\uD1A0\uB9AC"
+    map: "\uC2DC\uC124"
+    clear: 0
+    monster: []
+  - name: "\uC804\uD22C \uC5F0\uC2B5"
+    content: "\uC2AC\uB77C\uC784\uC744 \uB300\uC0C1\uC73C\uB85C \uD55C \uC804\uD22C
+      \uC5F0\uC2B5"
+    kind: E
+    map: N1
+    clear: 0
+    monster: []
+  - name: "\uC545\uCDE8\uB098\uB294 \uB140\uC11D\uB4E4"
+    content: "\uBD80\uD328\uD55C \uC545\uCDE8\uB97C \uB0B4\uB294 \uBB34\uC5B8\uAC00\uB4E4\uC774
+      \uC811\uADFC\uD574\uC628\uB2E4."
+    kind: E
+    map: N1
+    clear: 0
+    monster: []
+  - name: "\uAC80\uC740 \uADF8\uB9BC\uC790"
+    content: "\uAC80\uAC8C \uADF8\uB298\uC9C4 \uC544\uB798 \uBD89\uC740 \uB208\uB9CC\uC774
+      \uBCF4\uC778\uB2E4."
+    kind: E
+    map: N1
+    clear: 0
+    monster: []
+  - name: "\uAC70\uB300\uD55C \uC545\uCDE8"
+    content: "\u3147-\u3147"
+    kind: E
+    map: N1
+    clear: 0
+    monster: []
+  - name: "\uD480\uB9AC\uC9C0 \uC54A\uC740 \uC758\uBB38"
+    content: "\uB2F9\uC2E0\uC740 \uADF8\uB798\uC11C \uBCF8\uC778\uC774 \uC5EC\uAE30\uC5D0
+      \uC788\uB294 \uC774\uC720\uB97C \uAD81\uAE08\uD574\uD55C\uB2E4."
+    kind: "\uC2A4\uD1A0\uB9AC"
+    map: "\uC2DC\uC124"
+    clear: 0
+    monster: []
+  - name: 
+    content: 
+    kind: 
+    map: 
+    clear: 0
+    monster: []
+  - name: 
+    content: 
+    kind: 
+    map: 
+    clear: 0
+    monster: []
+  - name: "\uD2B9\uC218\uAC1C\uCCB4"
+    content: 
+    kind: D
+    map: N1
+    clear: 0
+    monster: []
+  - name: "\uCCA0\uAC00\uBA74\uC744 \uC4F4 \uC678\uD314\uC758 \uBB34\uC0AC"
+    content: 
+    kind: C
+    map: N1
+    clear: 0
+    monster: []
+  - name: "\uB0A0\uAC1C \uC5C6\uB294 \uCC9C\uC0AC"
+    content: 
+    kind: B
+    map: N1
+    clear: 0
+    monster: []
+  - name: 
+    content: 
+    kind: 
+    map: 
+    clear: 0
+    monster: []

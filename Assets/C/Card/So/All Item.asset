@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98dd05e1f0ea8048861a53421aa7dcf, type: 3}
+  m_Name: All Item
+  m_EditorClassIdentifier: 
+  items:
+  - illust: {fileID: 21300000, guid: f55963b048cfa6a4b8afc147e5e1c2b2, type: 3}
+    side: {fileID: 21300000, guid: 0ee973619e86b584dae943a62e50ff80, type: 3}
+    name: "\uBCA0\uAE30"
+    cost: 1
+    attack: 2
+    defense: 1
+    type: "\uCC38\uACA9"
+    effect: 
+    percent: 1
+    range: 2
+  - illust: {fileID: 21300000, guid: fa94d8397887ad4439ad1391f31e89bb, type: 3}
+    side: {fileID: 21300000, guid: c109dc50fb3ee2d4ab45f7f6583e219a, type: 3}
+    name: "\uCC0C\uB974\uAE30"
+    cost: 2
+    attack: 2
+    defense: 0
+    type: "\uCC38\uACA9"
+    effect: "\uAD00\uD1B5"
+    percent: 1
+    range: 4
+  - illust: {fileID: 21300000, guid: e4a6469edbb29784aa1a5fc4783b3c3b, type: 3}
+    side: {fileID: 21300000, guid: 6a324ef32521b4948830c6f903838712, type: 3}
+    name: "\uBC00\uCCD0\uB0B4\uAE30"
+    cost: 1
+    attack: 2
+    defense: 3
+    type: "\uD0C0\uACA9"
+    effect: "\uB109\uBC311, \uC774\uB3D91"
+    percent: 1
+    range: 1
+  - illust: {fileID: 21300000, guid: 42c35de14f4415942b48eaad4c6a384c, type: 3}
+    side: {fileID: 21300000, guid: 65ace9fb74ffced478af61936ace00ef, type: 3}
+    name: "\uB3C4\uB824\uB0B4\uAE30"
+    cost: 1
+    attack: 1
+    defense: 0
+    type: "\uCC38\uACA9"
+    effect: "\uCD9C\uD6082, \uC57D\uD6541 "
+    percent: 1
+    range: 1
+  - illust: {fileID: 21300000, guid: 32a1a23d9390d6e4b847dc36db802e60, type: 3}
+    side: {fileID: 21300000, guid: 0de7c4cddbd9930499b34f50e2780c44, type: 3}
+    name: "\uC62C\uB824\uCE58\uAE30"
+    cost: 2
+    attack: 10
+    defense: 5
+    type: "\uD0C0\uACA9"
+    effect: "\uB109\uBC312"
+    percent: 1
+    range: 1
+  - illust: {fileID: 21300000, guid: b9bc1ca993128e740bc6ddeb7bd256ac, type: 3}
+    side: {fileID: 21300000, guid: 63967e7d3c5537d4f84668cf23d86a30, type: 3}
+    name: "\uC5F0\uD0C0"
+    cost: 2
+    attack: 3
+    defense: 1
+    type: "\uD0C0\uACA9"
+    effect: "\uB2E4\uC9112"
+    percent: 1
+    range: 1
+  - illust: {fileID: 21300000, guid: fdc228870a90bf0498ceb33d9785c7c1, type: 3}
+    side: {fileID: 21300000, guid: ef73373cef428f04282104d0751c354f, type: 3}
+    name: "\uD734\uC2DD"
+    cost: 2
+    attack: 0
+    defense: 0
+    type: "\uC18C\uBE44"
+    effect: "\uCE74\uB4DC3"
+    percent: 1
+    range: 0
+  - illust: {fileID: 21300000, guid: bc6ef3127e793c1408342b11f4a4ff93, type: 3}
+    side: {fileID: 21300000, guid: 6046690aedfdafb4797540faba1adc37, type: 3}
+    name: "\uB0B4\uB824\uCE58\uAE30"
+    cost: 5
+    attack: 30
+    defense: 0
+    type: "\uD0C0\uACA9"
+    effect: 
+    percent: 1
+    range: 1
+  - illust: {fileID: 21300000, guid: d8dda79a0e32cb64db0c88daeab2c697, type: 3}
+    side: {fileID: 21300000, guid: 19fdd376e5bb6d648b559d6407a1ec32, type: 3}
+    name: "\uBC29\uD328\uB4E4\uAE30"
+    cost: 1
+    attack: 0
+    defense: 20
+    type: "\uC18C\uBE44"
+    effect: 
+    percent: 1
+    range: 0
+  - illust: {fileID: 21300000, guid: b0343cea5d14331448b9e439887ced90, type: 3}
+    side: {fileID: 21300000, guid: beec36b84ffb08647b864465f971420c, type: 3}
+    name: "\uC2AC\uB77C\uC784 \uACE0\uCE58"
+    cost: 1
+    attack: 1
+    defense: 5
+    type: "\uD0C0\uACA9"
+    effect: "\uCDE8\uC57D2, \uC57D\uD6542"
+    percent: 1
+    range: 1
+  - illust: {fileID: 21300000, guid: ef6cfb61aa9f8ca4f8afaf0b4a0afc54, type: 3}
+    side: {fileID: 21300000, guid: 85bc8a2c40a140041b87e865c3afdef5, type: 3}
+    name: "\uC2AC\uB77C\uC784 \uC0B0\uC131"
+    cost: 3
+    attack: 8
+    defense: 5
+    type: "\uCC38\uACA9"
+    effect: "\uCDE8\uC57D3"
+    percent: 1
+    range: 2
+  - illust: {fileID: 21300000, guid: 78528bab9f802284b84ea7a3be91772a, type: 3}
+    side: {fileID: 21300000, guid: 323145d6e5ee49444b8f2cefdd74eeea, type: 3}
+    name: "\uD76C\uC5F4"
+    cost: 3
+    attack: 2
+    defense: 1
+    type: "\uCC38\uACA9"
+    effect: "\uCD9C\uD6085"
+    percent: 1
+    range: 2
+  - illust: {fileID: 21300000, guid: 2d51a91a5772d0e469d9ae3a70840f82, type: 3}
+    side: {fileID: 21300000, guid: 540dcc5c80b24784999a92b68b6e7f99, type: 3}
+    name: "\uB2E4\uC911 \uD0C0\uACA9"
+    cost: 1
+    attack: 1
+    defense: 2
+    type: "\uD0C0\uACA9"
+    effect: "\uB2E4\uC9113"
+    percent: 1
+    range: 1
+  - illust: {fileID: 21300000, guid: 507444c86c8c67a489fcc2d8dd841597, type: 3}
+    side: {fileID: 21300000, guid: 21544e89cd663c54e86d9bd80346ecd2, type: 3}
+    name: "\uC2DD\uC0AC"
+    cost: 0
+    attack: 0
+    defense: 0
+    type: "\uC18C\uBE44"
+    effect: "\uB9C8\uB0982 \uD68C\uBCF510"
+    percent: 1
+    range: 0
+  - illust: {fileID: 21300000, guid: fc45b4bb9e5f29749a38d13f1cf01208, type: 3}
+    side: {fileID: 21300000, guid: ea33ac459fb61044888163e60722f0a0, type: 3}
+    name: "\uBC8C\uD06C\uC5C5"
+    cost: 0
+    attack: 0
+    defense: 0
+    type: "\uC18C\uBE44"
+    effect: "\uB9C8\uB0982 \uC774\uB3D91"
+    percent: 1
+    range: 0
