@@ -8,7 +8,7 @@
 ###### 대학교 졸업작품으로 진행한 카드 로그라이크 게임입니다!
 
 ###### URL
-[<img src="https://img.shields.io/badge/Script-03C75A?style=flat-square&logo=csharp&logoColor=white"/>](https://www.acmicpc.net/user/wellesys)
+[<img src="https://img.shields.io/badge/Script-03C75A?style=flat-square&logo=csharp&logoColor=white"/>](https://github.com/pima86/TurnBase_TCG/tree/main/Assets/C)
 [<img src="https://img.shields.io/badge/Youtube-ED1C40?style=flat-square&logo=Youtube&logoColor=white"/>](https://www.youtube.com/watch?v=7QIW40EtMAU)
 
 </div>
