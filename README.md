@@ -2,8 +2,8 @@
 
 ![header](https://capsule-render.vercel.app/api?type=Slice&text=)
 
-##### 🍏 This is a card log-like game that I played with my college graduation!
-###### 2022년 12월 캡스톤 디자인 경진대회에 입상한 RPG 카드 게임입니다!
+### 🍏 This is a card log-like game that I played with my college graduation!
+#### 2022년 12월 캡스톤 디자인 경진대회에 입상한 RPG 카드 게임입니다!
 
 <br/>
 
@@ -38,8 +38,8 @@
 <br/>
 <br/>
 
-##### ☕ You can check out the play video on YouTube!
-###### 사용된 에셋은 직접 제작했습니다.
+##### ☕ I made the assets used!
+###### 사용된 에셋은 직접 제작했습니다!
 [<img src="https://img.shields.io/badge/Instagram-BA55D3?style=flat-square&logo=Instagram&logoColor=white"/>](https://www.instagram.com/rotten_bell_pepper/)
 
 
