@@ -25,8 +25,8 @@
 
 <br/>
 <br/>
-<br/>
-<br/>
+
+![15e9bec59415e5fecc24b22445337734](https://github.com/pima86/TurnBase_TCG/assets/71416955/980893fe-57dd-4e6f-97e5-66925102c4f0)
 
 ##### ☕ You can check out the play video on YouTube!
 ###### Youtube를 통해 플레이 영상을 확인하실 수 있습니다!
