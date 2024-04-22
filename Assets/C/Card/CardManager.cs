@@ -26,19 +26,19 @@ public class CardManager : MonoBehaviour
 
     [SerializeField] List<Item> itemBuffer;
     public Card selectCard;
-    public bool numKeyUse; //³ªÁß¿¡ ¿É¼Ç°ª ¸¸µé¾î¼­ À¯ÁöÇÒ °Í
+    public bool numKeyUse; //ë‚˜ì¤‘ì— ì˜µì…˜ê°’ ë§Œë“¤ì–´ì„œ ìœ ì§€í•  ê²ƒ
     public bool isMyCardDrag;
     bool onMyCardArea;
     enum ECardState { Nothing, CanMouseOver, CanMouseDrag }
 
 
-    #region ÇÁ¸®ÆÕ Ãß°¡
+    #region í”„ë¦¬íŒ¹ ì¶”ê°€
     public Item PopItem()
     {
         if (itemBuffer.Count == 0)
             SetupItemRe();
 
-        SetupItemDraw(); // µ¦ ¼ıÀÚ Ç¥½Ã
+        SetupItemDraw(); // ë± ìˆ«ì í‘œì‹œ
 
         Item item = itemBuffer[0];
         itemBuffer.RemoveAt(0);
@@ -129,16 +129,23 @@ public class CardManager : MonoBehaviour
 
     void AddCard()
     {
+        //ì†íŒ¨ë¥¼ 9ì¥ìœ¼ë¡œ ì œí•œí•©ë‹ˆë‹¤.
         if (myCards.Count < 9)
         {
+            //ì¹´ë“œ ê°œì²´ë¥¼ ìƒì„±í•˜ê³ 
             var cardObject = Instantiate(cardPrefab, cardSpawnPoint.position, Utils.QI);
             var card = cardObject.GetComponent<Card>();
+
+            //ìƒì„±ëœ ì¹´ë“œ ê°œì²´ë¥¼ ë±ì—ì„œ ëœë¤ìœ¼ë¡œ ì¹´ë“œë¥¼ ê°€ì ¸ì˜¤ëŠ” PopItem()ì„ í†µí•´ SOë¥¼ ì „ë‹¬í•©ë‹ˆë‹¤.
             card.SetUp(PopItem());
+            //ì „ì²´ì ì¸ ê´€ë¦¬ë¥¼ ìœ„í•´ List<Card> myCardsì— ì¶”ê°€í•©ë‹ˆë‹¤.
             myCards.Add(card);
 
+            //ì¹´ë“œë¥¼ ì†íŒ¨ì— ë‘¥ê¸€ê²Œ ë„£ëŠ” ê³¼ì •ê³¼ ì²˜ìŒ Rotationì„ ì´ˆê¸°í™”í•˜ëŠ” ê³¼ì •
             SetOriginOrder();
             CardAlignment(true);
 
+            //ì¹´ë“œ ë½‘ëŠ” ì‚¬ìš´ë“œ
             ClipManager.Inst.CardDrow();
         }
     }
@@ -209,7 +216,7 @@ public class CardManager : MonoBehaviour
     }
     #endregion
     public bool isUse = false;
-    #region Ä«µå »ç¿ë ÀÌº¥Æ®
+    #region ì¹´ë“œ ì‚¬ìš© ì´ë²¤íŠ¸
     public void UseMouseUp()
     {
         if (!isUse)
@@ -254,9 +261,9 @@ public class CardManager : MonoBehaviour
     {
         PlayerCharacter.Inst.ManaMove(int.Parse(card.cost.text));
 
-        if (card.effect.text.Contains("´ÙÁß"))
+        if (card.effect.text.Contains("ë‹¤ì¤‘"))
         {
-            int limit = card.effect.text.IndexOf("´ÙÁß");
+            int limit = card.effect.text.IndexOf("ë‹¤ì¤‘");
             string effect_num = card.effect.text.Substring(limit + 2, 1);
 
             limit = int.Parse(effect_num);
@@ -266,7 +273,7 @@ public class CardManager : MonoBehaviour
                 yield return new WaitForSeconds(0.2f);
             }
         }
-        else if (!card.effect.text.Contains("´ÙÁß"))
+        else if (!card.effect.text.Contains("ë‹¤ì¤‘"))
         {
             PlayerCharacter.Inst.SetShield(int.Parse(card.defense.text));
         }
@@ -281,8 +288,8 @@ public class CardManager : MonoBehaviour
 
         PlayerCharacter.Inst.ManaMove(card.item.cost);
 
-        #region °üÅë
-        if (card.effect.text.Contains("°üÅë"))
+        #region ê´€í†µ
+        if (card.effect.text.Contains("ê´€í†µ"))
         {
             if (p_point > m_point)
             {
@@ -308,10 +315,10 @@ public class CardManager : MonoBehaviour
             }
         }
         #endregion
-        #region ´ÙÁß
-        if (card.effect.text.Contains("´ÙÁß"))
+        #region ë‹¤ì¤‘
+        if (card.effect.text.Contains("ë‹¤ì¤‘"))
         {
-            int limit = card.effect.text.IndexOf("´ÙÁß");
+            int limit = card.effect.text.IndexOf("ë‹¤ì¤‘");
             string effect_num = card.effect.text.Substring(limit + 2, 1);
             Mob mob = null;
             if (MobManager.Inst.select != null)
@@ -326,7 +333,7 @@ public class CardManager : MonoBehaviour
         }
         #endregion
 
-        if (!card.effect.text.Contains("°üÅë") && !card.effect.text.Contains("´ÙÁß"))
+        if (!card.effect.text.Contains("ê´€í†µ") && !card.effect.text.Contains("ë‹¤ì¤‘"))
         {
             MobManager.Inst.select.SetUpdate(card);
         }
@@ -337,9 +344,9 @@ public class CardManager : MonoBehaviour
 
     IEnumerator CardEffect(Card card)
     {
-        if (card.effect.text.Contains("Ä«µå"))
+        if (card.effect.text.Contains("ì¹´ë“œ"))
         {
-            int limit = card.effect.text.IndexOf("Ä«µå");
+            int limit = card.effect.text.IndexOf("ì¹´ë“œ");
             string effect_num = card.effect.text.Substring(limit + 2, 1);
 
             limit = int.Parse(effect_num);
@@ -349,25 +356,25 @@ public class CardManager : MonoBehaviour
                 yield return new WaitForSeconds(0.2f);
             }
         }
-        if (card.effect.text.Contains("È¸º¹"))
+        if (card.effect.text.Contains("íšŒë³µ"))
         {
-            int limit = card.effect.text.IndexOf("È¸º¹");
+            int limit = card.effect.text.IndexOf("íšŒë³µ");
             string effect_num = card.effect.text.Substring(limit + 2, 2);
 
             limit = int.Parse(effect_num);
             PlayerCharacter.Inst.Heal(limit);
         }
-        if (card.effect.text.Contains("¸¶³ª"))
+        if (card.effect.text.Contains("ë§ˆë‚˜"))
         {
-            int limit = card.effect.text.IndexOf("¸¶³ª");
+            int limit = card.effect.text.IndexOf("ë§ˆë‚˜");
             string effect_num = card.effect.text.Substring(limit + 2, 1);
 
             limit = int.Parse(effect_num);
             PlayerCharacter.Inst.ManaMove(-limit);
         }
-        if (card.effect.text.Contains("ÀÌµ¿"))
+        if (card.effect.text.Contains("ì´ë™"))
         {
-            int limit = card.effect.text.IndexOf("ÀÌµ¿");
+            int limit = card.effect.text.IndexOf("ì´ë™");
             string effect_num = card.effect.text.Substring(limit + 2, 1);
 
             limit = int.Parse(effect_num);
@@ -433,7 +440,7 @@ public class CardManager : MonoBehaviour
         if (selectCard.item.cost > PlayerCharacter.Inst.mananum)
         {
             selectCard = null;
-            PlayerCharacter.Inst.TextBox.text = "±â·ÂÀÌ ºÎÁ·ÇÕ´Ï´Ù.";
+            PlayerCharacter.Inst.TextBox.text = "ê¸°ë ¥ì´ ë¶€ì¡±í•©ë‹ˆë‹¤.";
             return;
         }
 
