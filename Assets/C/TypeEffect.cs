@@ -7,24 +7,24 @@ public class TypeEffect : MonoBehaviour
 {
     public AudioClip clip;
 
-    public GameObject Story; //��ȭ �α� �ҷ����� 
+    public GameObject Story; //대화 로그 불러오기 
     public GameObject TextBox;
     public GameObject talkEnd;
 
-    public TextMeshProUGUI m_TypingText; //Ÿ���� �� text
+    public TextMeshProUGUI m_TypingText; //타이핑 될 text
 
     #region stay
     public TextMeshProUGUI CT_1;
     public TextMeshProUGUI CT_2;
     public TextMeshProUGUI CT_3;
-    public float m_Speed = 0.05f; //Ÿ���� �ӵ�
+    public float m_Speed = 0.05f; //타이핑 속도
 
     public int ChoiAD = 0;
 
-    public int TalkID = 1; //��ȭ �α� ���̵�
-    public int TalkAD = 0; //��ȭ �α� �ּ�
+    public int TalkID = 1; //대화 로그 아이디
+    public int TalkAD = 0; //대화 로그 주소
 
-    public string tt; //�ؽ�Ʈ ���� ����
+    public string tt; //텍스트 저장 변수
 
     public void Type(bool talk, bool sel)
     {
@@ -75,19 +75,17 @@ public class TypeEffect : MonoBehaviour
         Color[] colors = mesh.colors;
         var textInfo = m_TypingText.textInfo;
 
-
-        if (endPoint != 0)
-        {
-            //���Ʒ��� �ﷷ
-            if (WaveFont)
-            {
-                for (int i = startPoint; i < endPoint + startPoint; ++i)
-                {
+        //종료지점이 0이 아닌 경우
+        if (endPoint != 0){
+            //위아래로 울렁거리는 웨이브 연출 (유쾌한 분위기)
+            if (WaveFont){
+                //시작지점부터 종료지점까지 해당 연출을 출력
+                for (int i = startPoint; i < endPoint + startPoint; ++i){
                     var charInfo = textInfo.characterInfo[i];
                     if (!charInfo.isVisible)
                         continue;
+                        
                     TMP_CharacterInfo c = m_TypingText.textInfo.characterInfo[i];
-
                     int index = c.vertexIndex;
 
                     colors[index] = rainbow.Evaluate(Mathf.Repeat(Time.time + vertices[index].x * 0.001f, 1f));
@@ -96,31 +94,29 @@ public class TypeEffect : MonoBehaviour
                     colors[index + 3] = rainbow.Evaluate(Mathf.Repeat(Time.time + vertices[index + 3].x * 0.001f, 1f));
 
                     var verts = textInfo.meshInfo[charInfo.materialReferenceIndex].vertices;
-
-                    for (int j = 0; j < 4; ++j)
-                    {
+                    
+                    for (int j = 0; j < 4; ++j){
                         var orig = verts[charInfo.vertexIndex + j];
                         verts[charInfo.vertexIndex + j] = orig + new Vector3(0, Mathf.Sin(Time.time * 2f + orig.x * 0.01f) * 10f, 0);
                     }
                 }
 
-                for (int i = 0; i < textInfo.meshInfo.Length; ++i)
-                {
+                for (int i = 0; i < textInfo.meshInfo.Length; ++i){
                     var meshInfo = textInfo.meshInfo[i];
                     meshInfo.mesh.vertices = meshInfo.vertices;
                     m_TypingText.UpdateGeometry(meshInfo.mesh, i);
                 }
-
                 mesh.colors = colors;
                 m_TypingText.canvasRenderer.SetMesh(mesh);
             }
 
-            if (WiggleFont)
-            {
+            //부들부들거리는 연출 (위험한 분위기)
+            if (WiggleFont){
                 m_TypingText.ForceMeshUpdate();
                 mesh = m_TypingText.mesh;
                 vertices = mesh.vertices;
-
+                
+                //시작지점부터 종료지점까지 해당 연출을 출력
                 for (int i = startPoint; i < endPoint; ++i)
                 {
                     TMP_CharacterInfo c = m_TypingText.textInfo.characterInfo[i];
@@ -159,7 +155,7 @@ public class TypeEffect : MonoBehaviour
         startPoint = 0;
         endPoint = 0;
 
-        int j = 0; // <> Ȯ�� ��
+        int j = 0; // <> 확인 용
         int font_Length = message.Length;
         float Temp_speed = speed;
         bool fontstyle = false;
@@ -265,7 +261,7 @@ public class TypeEffect : MonoBehaviour
             CT_3.text = "";
         }
 
-        int j = 0; // <> Ȯ�� ��
+        int j = 0; // <> 확인 용
         int font_Length = message.Length;
         float Temp_speed = speed;
 
